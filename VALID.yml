@@ -14,13 +14,13 @@ Resources:
   MyTable:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: Student
+      TableName: StudentTable
       ProvisionedThroughput:
         ReadCapacityUnits: 5
         WriteCapacityUnits: 5
       AttributeDefinitions:
         - AttributeName: ID
-          AttributeType: S
+          AttributeType: 'N'
       KeySchema:
         - AttributeName: ID
           KeyType: HASH
